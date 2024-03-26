@@ -80,10 +80,15 @@ input {
     box-shadow: 10px 10px 10px;
 }
 
-h3 {
+#price {
     font-size: 2rem;
     padding-top: 20px;
     color: red;
+}
+
+#thank-you {
+    font-size: 2rem;
+    padding-top: 20px;
 }
 
 
