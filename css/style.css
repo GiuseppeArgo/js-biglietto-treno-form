@@ -1,3 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:tomato;
+
+}
+
 input {
     margin: 10px;
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Calculator section */
+
+.calculator-section {
+    height: 350px;
+    width: 750px;
+    margin-top: 200px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 30px;
+}
+
+.calculator-section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.calculator-section .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.calculator-section p {
+    font-size: 1.2rem;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+input {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+/* Price section */
+
+.price-section {
+    height: 200px;
+    width: 750px;
+    margin-top: 50px;
+    background-color: whitesmoke;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 2rem;
+    padding-top: 20px;
+    color: red;
+}
+
+

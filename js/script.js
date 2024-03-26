@@ -21,17 +21,17 @@ const clickElem = document.getElementById("btn");
 
 clickElem.addEventListener("click", function() {
     kmValue = parseInt(kmInputElem.value);
-    console.log(kmValue,typeof kmValue)
+    console.log(kmValue,typeof kmValue);
 
     ageValue = parseInt(ageInputElem.value);
-    console.log(ageValue, typeof ageValue)
+    console.log(ageValue, typeof ageValue);
     //PARTE LOGICA 
 
     // Calcoliamo il prezzo del biglietto in base ai km
 
     const priceKm = kmValue * 0.21;
 
-    console.log(priceKm, typeof priceKm)
+    console.log(priceKm, typeof priceKm);
 
     //Calcoliamo lo sconto
 
@@ -45,26 +45,29 @@ clickElem.addEventListener("click", function() {
     console.log(discount,typeof discount);
     } else {
     discount = 0;
-    }
+    };
 
     //Calcoliamo il prezzo del biglietto
 
     const price = priceKm - discount;
 
-    console.log (price, typeof price)
+    console.log (price, typeof price);
 
     //OUTPUT
 
     //Preparo il messaggio da stampare in pagina
 
-    const result = `Il prezzo è ${price.toFixed(2)} €`;
+    const result = `${price.toFixed(2)} €`;
 
-    console.log(result, typeof result)
+    console.log(result, typeof result);
 
+    const thanks = `Grazie per aver scelto di viaggiare con noi`
 
     //Stampiamo il risultato in pagine
 
     document.getElementById("price") .innerHTML = (result);
+
+    document.getElementById("thank-you") .innerHTML = (thanks);
 });
     
 

@@ -12,14 +12,29 @@
     <script defer src="./js/script.js"></script>
 </head>
 <body>
-    
-    <label for="name">Quanti km vuoi percorrere?</label>
-    <input type="number" id="km"> <br>
-    <label for="age">La tua età</label>
-    <input type="number" id="age"> <br>
-    <button id="btn">Genera</button>
-
-    <h1 id="price"></h1>
-    
+    <main>
+        <section class="calculator-section">
+            <h2>Calcola il prezzo del tuo biglietto</h2>
+            <div class="form">
+                <div>
+                    <p class="km-p">Km da percorrere:</p>
+                    <input type="number" id="km">
+                </div>
+                <div>
+                    <p>La tua età:</p>
+                    <input type="number" id="age">
+                </div>
+            </div>
+            <div>
+                <button id="btn">Genera</button>
+            </div>
+        </section>
+        
+        <section class="price-section">
+            <h2>Il prezzo del tuo biglietto è:</h2>
+            <h3 id="price"></h3>
+            <h3 id="thank-you"></h3>
+        </section>
+    </main>
 </body>
 </html>
