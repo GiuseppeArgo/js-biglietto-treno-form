@@ -20,7 +20,7 @@ console.log (ageValue, typeof ageValue);
 const clickElem = document.getElementById("btn");
 
 clickElem.addEventListener("click", function() {
-    kmValue = parseInt(kmInputElem.value);
+    kmValue = parseFloat(kmInputElem.value);
     console.log(kmValue,typeof kmValue);
 
     ageValue = parseInt(ageInputElem.value);
